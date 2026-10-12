@@ -1,177 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="senli1073" />
-    <title id="title"></title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Bingzhou Li (李秉洲), computer science undergraduate at Tongji University. Research in efficient multimodal models, scientific research agents, and recursive self-improvement.">
+  <meta name="author" content="Bingzhou Li">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bingzhou Li · 李秉洲">
+  <meta property="og:description" content="Efficient multimodal models and self-improving research agents. Computer science at Tongji University.">
+  <meta property="og:url" content="https://laychou666.github.io/">
+  <meta property="og:image" content="https://laychou666.github.io/static/assets/img/photo.webp">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://laychou666.github.io/">
+  <link rel="icon" type="image/svg+xml" href="static/assets/favicon.svg">
+  <link rel="preload" href="static/assets/fonts/merriweather-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="static/assets/fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="static/css/main.css?v=20261012-research-overviews">
+  <script src="static/js/scripts.js?v=20261012-sidebar" defer></script>
+  <script src="static/js/companion.js?v=20261012-driving-1" defer></script>
+  <title>Bingzhou Li · 李秉洲</title>
 </head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#about" data-guide-target="about" aria-current="location">about</a>
+      <a class="nav-link" href="#publications" data-guide-target="publications">research</a>
+      <a class="nav-link" href="#experience" data-guide-target="experience">experience</a>
+      <a class="nav-link" href="#education" data-guide-target="education">education</a>
+      <a class="nav-link" href="#hobbies" data-guide-target="hobbies">hobbies</a>
     </nav>
+  </header>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+  <div class="page-shell" id="page-shell">
+    <aside class="profile-sidebar" aria-label="Profile and research interests">
+      <a class="portrait-link" href="#about" aria-label="Bingzhou Li, back to introduction"><img class="portrait" src="static/assets/img/photo.webp" alt="Bingzhou Li" width="962" height="1282" fetchpriority="high"></a>
+      <div class="profile-links">
+        <div class="profile-icon-links">
+          <a class="profile-icon-link" href="mailto:choulay@tongji.edu.cn" aria-label="Email Bingzhou Li at choulay@tongji.edu.cn" title="choulay AT tongji.edu.cn">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+          </a>
+          <a class="profile-icon-link" href="https://drive.google.com/file/d/119vJFY17Kux2mTu0pGJrMMS_sbrUeibv/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="CV, opens Google Drive in a new tab" title="CV">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Zm0 0v5h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="17" fill="currentColor" font-family="Arial, sans-serif" font-size="7" font-weight="700" text-anchor="middle">CV</text></svg>
+          </a>
+          <a class="profile-icon-link" href="https://github.com/laychou666" target="_blank" rel="noopener noreferrer" aria-label="GitHub, opens in a new tab" title="GitHub">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.105.769-.244.769-.542 0-.267-.01-.974-.016-1.912-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.023-.7.077-.686.077-.686 1.13.08 1.725 1.16 1.725 1.16 1.006 1.723 2.64 1.225 3.283.937.102-.729.394-1.225.716-1.507-2.498-.284-5.124-1.25-5.124-5.565 0-1.23.44-2.233 1.16-3.02-.116-.284-.503-1.43.11-2.98 0 0 .946-.303 3.095 1.154a10.79 10.79 0 0 1 5.628 0c2.147-1.457 3.09-1.154 3.09-1.154.615 1.55.228 2.696.112 2.98.722.787 1.16 1.79 1.16 3.02 0 4.327-2.63 5.278-5.136 5.556.404.35.765 1.04.765 2.097 0 1.514-.014 2.735-.014 3.106 0 .3.203.652.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <ul class="profile-interests" aria-label="Research interests">
+        <li>Multimodal Learning</li>
+        <li>Generative Models</li>
+        <li>Embodied Intelligence</li>
+        <li>Self-Improving Agents</li>
+      </ul>
+    </aside>
+
+    <main id="main" class="reading-column">
+      <section id="about" class="about-section" aria-labelledby="name">
+        <h1 id="name">Bingzhou Li <span lang="zh-CN">李秉洲</span></h1>
+        <p>I study Computer Science and Technology in the Elite Class at Tongji University’s Guohao College.</p>
+        <p>I work on <strong>multimodal models</strong> and <strong>self-improving agents</strong>: making audio-visual understanding and generation more efficient, and helping agents learn through experimentation.</p>
+        <p>Currently, I work with Prof. <a href="https://www.huaxiuyao.io/" target="_blank" rel="noopener noreferrer">Huaxiu Yao</a> at UNC Chapel Hill on scientific research agents and recursive self-improvement. Previously, I worked with Prof. <a href="https://taohuang.info/" target="_blank" rel="noopener noreferrer">Tao Huang</a> and Prof. <a href="https://audiocc.sjtu.edu.cn/en/members/yanmin.qian" target="_blank" rel="noopener noreferrer">Yanmin Qian</a> at Shanghai Jiao Tong University on multimodal generation and efficient inference.</p>
+      </section>
+
+      <section id="publications" class="content-section" aria-labelledby="publications-heading">
+        <div class="section-heading"><h2 id="publications-heading">research</h2><span class="section-note">publications &amp; preprints</span></div>
+        <div class="publication-toolbar">
+          <div class="publication-filters" role="group" aria-label="Filter publications by research area">
+            <button class="filter-button selected" type="button" data-filter="all" aria-pressed="true">all</button><span aria-hidden="true">/</span>
+            <button class="filter-button" type="button" data-filter="multimodal" aria-pressed="false">multimodal</button><span aria-hidden="true">/</span>
+            <button class="filter-button" type="button" data-filter="agents" aria-pressed="false">agents</button>
+          </div>
+          <span class="filter-status sr-only" role="status"></span>
+        </div>
+        <div class="publication-list">
+          <article class="publication" id="dash" data-category="multimodal" data-companion="DASH: listen first, then keep the useful tokens.">
+            <a class="publication-overview" href="static/assets/overview/dash.png" target="_blank" rel="noopener noreferrer" aria-label="View DASH overview at full size, opens in a new tab" title="View full-size overview">
+              <img src="static/assets/overview/dash.png" alt="DASH overview: audio-guided segmentation and multimodal token compression" width="2332" height="1208" loading="lazy" decoding="async">
+            </a>
+            <div class="publication-content">
+              <h3><a href="https://link.springer.com/chapter/10.1007/978-3-032-37461-5_16" target="_blank" rel="noopener noreferrer">DASH: Dynamic Audio-Driven Semantic Chunking for Efficient Omnimodal Token Compression</a></h3>
+              <p class="authors"><strong>Bingzhou Li</strong>, Tao Huang</p>
+              <p class="venue"><strong>ECCV 2026</strong> · European Conference on Computer Vision, pp. 293–309</p>
+              <div class="publication-links"><a class="publication-icon-link" href="https://link.springer.com/chapter/10.1007/978-3-032-37461-5_16" target="_blank" rel="noopener noreferrer" aria-label="Read DASH paper, opens in a new tab" title="Paper"><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Zm0 0v5h5"/><path d="M8 12h8M8 16h8"/></svg></a><a class="publication-icon-link" href="https://github.com/laychou666/DASH" target="_blank" rel="noopener noreferrer" aria-label="DASH code on GitHub, opens in a new tab" title="Code on GitHub"><svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.105.769-.244.769-.542 0-.267-.01-.974-.016-1.912-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.023-.7.077-.686.077-.686 1.13.08 1.725 1.16 1.725 1.16 1.006 1.723 2.64 1.225 3.283.937.102-.729.394-1.225.716-1.507-2.498-.284-5.124-1.25-5.124-5.565 0-1.23.44-2.233 1.16-3.02-.116-.284-.503-1.43.11-2.98 0 0 .946-.303 3.095 1.154a10.79 10.79 0 0 1 5.628 0c2.147-1.457 3.09-1.154 3.09-1.154.615 1.55.228 2.696.112 2.98.722.787 1.16 1.79 1.16 3.02 0 4.327-2.63 5.278-5.136 5.556.404.35.765 1.04.765 2.097 0 1.514-.014 2.735-.014 3.106 0 .3.203.652.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></a></div>
             </div>
-        </div>
-    </section>
-    <!-- Top Section -->
-
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
-    </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
-
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
-
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
-
-        </div>
-    </section>
-    <!-- Awards -->
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+          </article>
+          <article class="publication" id="asymrefresh" data-category="multimodal" data-companion="AsymRefresh: audio and video do not always need the same refresh.">
+            <a class="publication-overview" href="static/assets/overview/asymrefresh.png" target="_blank" rel="noopener noreferrer" aria-label="View AsymRefresh overview at full size, opens in a new tab" title="View full-size overview">
+              <img src="static/assets/overview/asymrefresh.png" alt="AsymRefresh overview: modality-asymmetric refresh and selective audio computation" width="2502" height="1060" loading="lazy" decoding="async">
+            </a>
+            <div class="publication-content">
+              <h3><a href="https://openreview.net/forum?id=fni1boV4Dr" target="_blank" rel="noopener noreferrer">AsymRefresh: Modality-Asymmetric Refresh for Efficient Joint Audio-Video Generation</a></h3>
+              <p class="authors"><strong>Bingzhou Li</strong>, Tao Huang, Yanmin Qian</p>
+              <div class="publication-links"><a class="publication-icon-link" href="https://openreview.net/forum?id=fni1boV4Dr" target="_blank" rel="noopener noreferrer" aria-label="Read AsymRefresh paper, opens in a new tab" title="Paper"><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Zm0 0v5h5"/><path d="M8 12h8M8 16h8"/></svg></a></div>
             </div>
+          </article>
+          <article class="publication" id="autoresearchclaw" data-category="agents" data-companion="AutoResearchClaw: experiment, evaluate, and try again.">
+            <a class="publication-overview" href="static/assets/overview/arc.png" target="_blank" rel="noopener noreferrer" aria-label="View AutoResearchClaw overview at full size, opens in a new tab" title="View full-size overview">
+              <img src="static/assets/overview/arc.png" alt="AutoResearchClaw overview: discovery, experimentation, writing, and cross-run evolution" width="1954" height="978" loading="lazy" decoding="async">
+            </a>
+            <div class="publication-content">
+              <h3><a href="https://arxiv.org/abs/2605.20025" target="_blank" rel="noopener noreferrer">AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration</a></h3>
+              <p class="authors">Jiaqi Liu*, Shi Qiu*, Mairui Li, <strong>Bingzhou Li</strong>, et al.</p>
+              <p class="venue">arXiv:2605.20025, 2026</p>
+              <div class="publication-links">
+                <a class="publication-icon-link" href="https://arxiv.org/abs/2605.20025" target="_blank" rel="noopener noreferrer" aria-label="Read AutoResearchClaw paper, opens in a new tab" title="Paper"><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Zm0 0v5h5"/><path d="M8 12h8M8 16h8"/></svg></a>
+                <a class="publication-icon-link" href="https://github.com/aiming-lab/AutoResearchClaw" target="_blank" rel="noopener noreferrer" aria-label="AutoResearchClaw code on GitHub, opens in a new tab" title="Code on GitHub"><svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.105.769-.244.769-.542 0-.267-.01-.974-.016-1.912-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.023-.7.077-.686.077-.686 1.13.08 1.725 1.16 1.725 1.16 1.006 1.723 2.64 1.225 3.283.937.102-.729.394-1.225.716-1.507-2.498-.284-5.124-1.25-5.124-5.565 0-1.23.44-2.233 1.16-3.02-.116-.284-.503-1.43.11-2.98 0 0 .946-.303 3.095 1.154a10.79 10.79 0 0 1 5.628 0c2.147-1.457 3.09-1.154 3.09-1.154.615 1.55.228 2.696.112 2.98.722.787 1.16 1.79 1.16 3.02 0 4.327-2.63 5.278-5.136 5.556.404.35.765 1.04.765 2.097 0 1.514-.014 2.735-.014 3.106 0 .3.203.652.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></a>
+                <a class="stars-badge" href="https://github.com/aiming-lab/AutoResearchClaw/stargazers" target="_blank" rel="noopener noreferrer" title="AutoResearchClaw stars on GitHub"><img src="https://img.shields.io/github/stars/aiming-lab/AutoResearchClaw?style=social" alt="AutoResearchClaw GitHub star count" height="20" loading="lazy" decoding="async"></a>
+              </div>
+            </div>
+          </article>
+          <article class="publication" id="clawarena" data-category="agents" data-companion="ClawArena: what happens when the information around an agent changes?">
+            <a class="publication-overview" href="static/assets/overview/clawarena.png" target="_blank" rel="noopener noreferrer" aria-label="View ClawArena overview at full size, opens in a new tab" title="View full-size overview">
+              <img src="static/assets/overview/clawarena.png" alt="ClawArena overview: evolving information environments and agent evaluation" width="2358" height="960" loading="lazy" decoding="async">
+            </a>
+            <div class="publication-content">
+              <h3><a href="https://arxiv.org/abs/2604.04202" target="_blank" rel="noopener noreferrer">ClawArena: Benchmarking AI Agents in Evolving Information Environments</a></h3>
+              <p class="authors">Haonian Ji*, Kaiwen Xiong*, Siwei Han, Peng Xia, Shi Qiu, Yiyang Zhou, Jiaqi Liu, Jinlong Li, <strong>Bingzhou Li</strong>, et al.</p>
+              <p class="venue">arXiv:2604.04202, 2026</p>
+              <div class="publication-links"><a class="publication-icon-link" href="https://arxiv.org/abs/2604.04202" target="_blank" rel="noopener noreferrer" aria-label="Read ClawArena paper, opens in a new tab" title="Paper"><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Zm0 0v5h5"/><path d="M8 12h8M8 16h8"/></svg></a><a class="publication-icon-link" href="https://github.com/aiming-lab/ClawArena" target="_blank" rel="noopener noreferrer" aria-label="ClawArena code on GitHub, opens in a new tab" title="Code on GitHub"><svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.105.769-.244.769-.542 0-.267-.01-.974-.016-1.912-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.023-.7.077-.686.077-.686 1.13.08 1.725 1.16 1.725 1.16 1.006 1.723 2.64 1.225 3.283.937.102-.729.394-1.225.716-1.507-2.498-.284-5.124-1.25-5.124-5.565 0-1.23.44-2.233 1.16-3.02-.116-.284-.503-1.43.11-2.98 0 0 .946-.303 3.095 1.154a10.79 10.79 0 0 1 5.628 0c2.147-1.457 3.09-1.154 3.09-1.154.615 1.55.228 2.696.112 2.98.722.787 1.16 1.79 1.16 3.02 0 4.327-2.63 5.278-5.136 5.556.404.35.765 1.04.765 2.097 0 1.514-.014 2.735-.014 3.106 0 .3.203.652.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></a></div>
+            </div>
+          </article>
         </div>
-    </footer>
+      </section>
 
+      <section id="experience" class="content-section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">experience</h2>
+        <article class="experience-entry">
+          <div class="entry-heading"><h3>cPilot · Tsinghua University</h3><span class="entry-date">May 2025 — Jan 2026</span></div>
+          <p class="entry-topic">GUI agents &amp; on-device LLMs · Project member</p>
+          <p>I helped develop <strong>cPilot</strong>, a desktop agent that combines on-device LLMs with cloud models to automate multi-step GUI tasks. My work focused on its CAMEL-based agent architecture and routing tasks to specialized models.</p>
+          <p>The project won a <strong>National First Prize</strong> at the China International College Students Innovation Competition and was commercialized through <a href="https://onetokencareers.com/" target="_blank" rel="noopener noreferrer">One Token</a>, a startup that raised <strong>over RMB 10 million</strong> in external funding.</p>
+        </article>
+      </section>
+
+      <section id="education" class="content-section" aria-labelledby="education-heading">
+        <h2 id="education-heading">education</h2>
+        <article class="education-entry">
+          <div class="entry-heading"><h3>Tongji University</h3><span class="entry-date">Sep 2023 — Jun 2027 (Expected)</span></div>
+          <p>B.S. in Computer Science and Technology (Elite Class), Guohao College</p>
+        </article>
+        <article class="education-entry">
+          <div class="entry-heading"><h3>Fudan University</h3><span class="entry-date">Sep 2024 — Jan 2026</span></div>
+          <p>Minor in Finance</p>
+        </article>
+      </section>
+
+      <section id="awards" class="content-section" aria-labelledby="awards-heading">
+        <h2 id="awards-heading">selected honors</h2>
+        <ul class="honors-list">
+          <li><span class="honor-year">2026</span><span><strong>Outstanding Student</strong> (top 5%)</span></li>
+          <li><span class="honor-year">2025</span><span><strong>National Scholarship</strong> (top 0.4% nationally)</span></li>
+          <li><span class="honor-year">2024</span><span><strong>First-Class Scholarship</strong> (top 5%)</span></li>
+          <li><span class="honor-year">2024</span><span><strong>Social Activity Scholarship</strong> (top 5%)</span></li>
+          <li><span class="honor-year">2024</span><span><strong>Outstanding Volunteer Honorary Title</strong> </span></li>
+        </ul>
+      </section>
+
+      <section id="hobbies" class="content-section hobbies-section" aria-labelledby="hobbies-heading">
+        <h2 id="hobbies-heading">hobbies</h2>
+        <p>Outside research, I enjoy playing the piano, badminton, anime, and karaoke. 
+          I also like playing <a href="https://www.counter-strike.net/cs2" target="_blank" rel="noopener noreferrer">Counter-Strike 2</a> (golden B+ at perfect world) and VALORANT.</p>
+        <p>Here I would like to share two of my favorite performances, by <a href="https://www.youtube.com/watch?v=m2nphE3L48k&list=PLDOx7nx0z2hhKCGTyeNTjT2jOLozuFNvi&index=6" target="_blank" rel="noopener noreferrer">Lang Lang</a> and <a href="https://www.youtube.com/watch?v=lAXJPop9LaY" target="_blank" rel="noopener noreferrer">Animezzz</a>.</p>
+      </section>
+      <footer class="site-footer"><p>Last updated: October 2026</p><p>© 2026 Bingzhou Li</p></footer>
+    </main>
+
+    <aside class="companion-track" id="companion-track" aria-label="ADAM, research companion">
+      <button class="companion-button" id="companion" type="button" aria-label="Meet ADAM, a 3D research companion. Click to say hello; drag or use arrow keys to turn."></button>
+      <p class="companion-caption" id="companion-caption" role="status">Hi, I’m ADAM. Let’s look around.</p>
+      <button class="companion-motion" id="companion-motion" type="button" aria-pressed="false">pause ADAM</button>
+    </aside>
+  </div>
 </body>
-
 </html>
